@@ -1,1 +1,41 @@
 /* Acá va tu código */
+h1{
+    /*estilos para títulos h1*/
+    color: blue;
+    text-align:center
+    background-color:white;
+  }
+  
+  h2{
+    /*estilos para títulos h2*/
+  color: black
+    text-align:center
+    font-family: font|initial|inherit;
+  }
+  
+  div {
+    /*div genérico*/
+   text-align:center;
+  }
+  
+  #audio{
+    display: none
+    }
+  
+  body{
+    background: url(http://www.freeslots99.com/img/slots/inspector-gadget-blueprint.jpg);
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+  }
+  
+  html{
+    height: 100%;
+    background-color: #111;
+  }
+  
+  .contenedor{
+    height: 49%;
+    background-color: #6A737C;
+    margin: 1% 1%;
+  }
