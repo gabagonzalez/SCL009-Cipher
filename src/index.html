@@ -13,45 +13,44 @@
   </header> 
 <div class="contenedor">
   <h1 id="titlemain"> TOP SECRET ¬ ¬<br> </h1>
-<div id= "principal">
-    <h2>Crea tus propios mensajes secretos. Antes de escuchar que el mensaje se autodestruirá... </h2>
-    <h2> Instrucion para la Mision:</h2>
-    <p> 1- Primero escribe tu mensaje. 
-    <br>2- Seleccciona un número en clave, del 1 al 25.
-    <br>3- Luego elige si quieres cifrar o descifrar y tendrás tu mensaje secreto... 
-    <br> ¡Listo para tus misiones secretas!</p>
-    <h2>Comencemos!!</h2>
-      <!-- ¿cual es tú nombre?
-      <input id="boxName" type="text">
-      <button id="buttonGo" onclick="goPressed()">Enviar</button>-->
+  <h2>Crea tus propio texto secreto.
+  <br>Antes de escuchar que el mensaje se autodestruirá... </h2>
+  <h2>Comencemos!!</h2>
+  <!-- ¿cual es tú nombre?
+  <input id="boxName" type="text">
+  <button id="buttonGo" onclick="goPressed()">Enviar</button>
+  <form id="ccipher">-->
+
+<div id= "cifrar">
+ <ul id="list">
+  <h2> Instruciones para la Mision:</h2>
+  <p> 1- Primero seleccciona un número clave, del 1 al 3.
+  <p> Clave <input type="number"  max="3" min="1" id="offset"></p>
+  <br>2- Después escribe tu texto.  
+  <h2> Tu mensaje aquí:</h2>
+  <p><textarea rows="15" cols="75" id="text"></textarea></p>
+  <br>3- Por último elige si quieres cifrar o descifrar.
+  <br> Y tendrás tu texto secreto... ¡Listo para tus misiones secretas!</p>
+  <p><input type="button" value="Cifrar!!" id="boton1">
+  <br><input type="reset" value="Borrar!" id="deleter">
+  </ul></div>
+
+  <!-- conectar con la funcion -->
+  <!--<input type="button" value="Descifrar!!" id="show_decipher">-->
+  <!--<input name="Restablecer" type="reset" value="Volver" onClick="history.back()">-->
+  <!--div id= "resultados">-->
+  <!--</form>-->
+  <div id="root">
+  <script src="index.js"></script>
+  <script src="cipher.js"></script>
+  <h2>Resultados:</h2>
+  <p> <textarea rows="15" cols="75" id="text2"></textarea></p><br>
+  <p><input type="reset" value="Borrar/Comenzar otra vez" id="deleter2">
+    <input type="submit" value="Enviar/ Compartir" id="submit"></p><br>
+  </div> 
+</div class="contenedor">
+  <div id="root2">
+<h1>GGonzalez</h1>
 </div>
-<div id= "formulario">
-    <form id="ccipher">
-    <h2>Aquí escribe tu mensaje </h2>
-    <p> <textarea rows="15" cols="75" id="text"></textarea></p>
-    <p> Clave <input type="number"  max="3" min="1" id="key"></p>
-    <p><input type="button" value="Cifrar!!" id="cipher">
-    <input type="button" value="Descifrar!!" id="decipher">
-    <input type="reset" value="Borrar!" id="deleter">
-    <!--<input name="Restablecer" type="reset" value="Volver" onClick="history.back()">-->
-    </p>  
-</div> <!-- conectar con la funcion -->
-<div id= "resultados">
-    <h2>Resultados:</h2>
-    <p> <textarea rows="10" cols="50" id="messageResult"></textarea></p>
-    <br>
-<div id="root">
-    <script src="index.js"></script>
-    <script src="cipher.js"></script></div>
-      <p><input type="reset" value="Borrar/Comenzar otra vez" id="deleter2">
-      <input type="submit" value="Enviar/ Compartir" id="submit"></p>
-      <br>
-</div>
-      </form>
-<div class="contenedor">
-  
-    <div id="root2">
-    <h1>GGonzalez</h1>
-    </div>
-  </body>
+</body>
 </html>

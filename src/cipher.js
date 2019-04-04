@@ -4,7 +4,6 @@ window.cipher = {
     let ascii = '';
     for (let i = 0; i< text.length; i++){
     acsii = text[i].charCodeAt(0);
-    console.log(ascii);
     /*en código acsii*/  
     let letter;
     if (acsii  >=65 && acsii<= 90){
@@ -25,7 +24,6 @@ window.cipher = {
     let ascii = '';
     for (let i = 0; i< text.length; i++){
     acsii = text[i].charCodeAt(0);
-    console.log(ascii);
     /*en código acsii*/  
     let letter;
     if (acsii  >=65 && acsii<= 90){
