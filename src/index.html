@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Mensajes Secretos</title>
-  <link rel="stylesheet" href="style.css" />
-  </head>
+<meta charset="utf-8">
+<title> Mensajes Secretos</title>
+<link rel="stylesheet" href="style.css" />
+</head>
 <body>
-  <header>
-  <img src="https://www.kidsemotion.com.mx/wp-content/uploads/2016/08/mensaje-secreto-620x350.jpg">
-  <br>
-  <audio id="audio" controls autoplay loop><source type="audio/mp3"  src="http://wavcentral.com/sounds/movies/ins_gadg/insp_theme.mp3"></audio>
-  </header> 
+<header>
+<img src="https://www.kidsemotion.com.mx/wp-content/uploads/2016/08/mensaje-secreto-620x350.jpg">
+<br>
+<audio id="audio" controls autoplay loop><source type="audio/mp3"  src="http://wavcentral.com/sounds/movies/ins_gadg/insp_theme.mp3"></audio>
+</header> 
 <div class="contenedor">
-  <h1 id="titlemain"> TOP SECRET ¬ ¬<br> </h1>
-  <h2>Crea tus propio texto secreto.
-  <br>Antes de escuchar que el mensaje se autodestruirá... </h2>
-  <h2>Comencemos!!</h2>
-  <!-- ¿cual es tú nombre?
-  <input id="boxName" type="text">
-  <button id="buttonGo" onclick="goPressed()">Enviar</button>
-  <form id="ccipher">-->
-
+<h1 id="titlemain"> TOP SECRET ¬ ¬<br> </h1>
+<h2>Antes de escuchar que el mensaje se autodestruirá...
+<br>Crea tu propio texto secreto. </h2>
+<h2>Comencemos!!</h2>
+<!-- ¿cual es tú nombre?
+<input id="boxName" type="text">
+<button id="buttonGo" onclick="goPressed()">Enviar</button>
+<form id="ccipher">-->
 <div id= "cifrar">
- <ul id="list">
-  <h2> Instruciones para la Mision:</h2>
-  <p> 1- Primero seleccciona un número clave, del 1 al 3.
-  <p> Clave <input type="number"  max="3" min="1" id="offset"></p>
-  <br>2- Después escribe tu texto.  
-  <h2> Tu mensaje aquí:</h2>
-  <p><textarea rows="15" cols="75" id="text"></textarea></p>
-  <br>3- Por último elige si quieres cifrar o descifrar.
-  <br> Y tendrás tu texto secreto... ¡Listo para tus misiones secretas!</p>
-  <p><input type="button" value="Cifrar!!" id="boton1">
-  <br><input type="reset" value="Borrar!" id="deleter">
-  </ul></div>
-
-  <!-- conectar con la funcion -->
-  <!--<input type="button" value="Descifrar!!" id="show_decipher">-->
-  <!--<input name="Restablecer" type="reset" value="Volver" onClick="history.back()">-->
-  <!--div id= "resultados">-->
-  <!--</form>-->
-  <div id="root">
-  <script src="index.js"></script>
-  <script src="cipher.js"></script>
-  <h2>Resultados:</h2>
-  <p> <textarea rows="15" cols="75" id="text2"></textarea></p><br>
-  <p><input type="reset" value="Borrar/Comenzar otra vez" id="deleter2">
-    <input type="submit" value="Enviar/ Compartir" id="submit"></p><br>
-  </div> 
+<ul id="list">
+<h2> Instruciones para la Mision:</h2>
+<p> 1- Primero seleccciona un número clave, del 1 al 3.
+<p> Clave <input type="number"  max="3" min="1" id="inputOffSet"></p>
+<br>2- Después escribe tu texto.  
+<h2> [^_^]</h2>
+<p><textarea id="textArea1" value="" placeholder="ESCRIBE TU MENSAJE AQUI" name="" cols="70" rows="8"></textarea></p>
+<br>3- Y POR ÚLTIMO ELIGE SI QUIERES CIFRAR O DESCIFRAR.
+</p>
+<p><input type="button" value="Cifrar!!" id="cifrarBtn">
+<input type="button" value="Descifrar!!" id="descifrarBtn"></p>
+<br> ASI TENDRÁS TU MENSAJE SECRETO...
+<!--<input type="reset" value="Borrar!" id="deleter">-->
+<h2>¡Listo para tus próximas misiones!</h2>
+<p><textarea id="textArea2" value="" placeholder="AQUI APARECERA TU MENSAJE CIFRADO/DESCIFRADO" name="" cols="70" rows="8"></textarea></p><br>
+<p><button type="button" id="resetbtn">BORRAR MENSAJE</button>
+<!--<input type="reset" value="Borrar/Comenzar otra vez" id="deleter2">-->
+<input type="submit" value="Enviar/ Compartir" id="submit"></p><br>
+</ul></div>
+<!--<input name="Restablecer" type="reset" value="Volver" onClick="history.back">-->
+<!--div id= "resultados">-->
+<!--</form>-->
 </div class="contenedor">
-  <div id="root2">
-<h1>GGonzalez</h1>
+<div id="root">
+<h1> < GGonzález > </h1>
 </div>
+<script src="index.js"></script>
+<script src="cipher.js"></script>
 </body>
 </html>
