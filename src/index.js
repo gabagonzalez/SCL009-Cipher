@@ -1,26 +1,37 @@
-  /*audio*/
+  /*audio
   let audio = document.getElementById("audio");
-  /*innerHTML con addEventListener*/
-  document.getElementById("cifrarBtn").addEventListener("click", () => {
-  const toEncode = document.getElementById("textArea1").value.toUpperCase();
-  /*Guardo en una variable el texto ingresados*/
-  const offSet = parseInt(document.getElementById("inputOffSet").value);
-  /*Guardo en una variable el elemento offset*/
-  let result = window.cipher.encode(toEncode,offSet)
-  document.getElementById("textArea2").innerHTML = result;
+  innerHTML con addEventListener
+  1-Guardo en una variable el texto ingresados
+  Guardo en una variable el elemento offset
+  let result = window.cipher.encode(toEncode,offset)
+  document.getElementById("containerResult").innerHTML = result;
+  2-Guardo en una variable el texto ingresados
+  Guardo en una variable el elemento offset
+  let result = src/cipher.js(cipher.decode(toDecode,offset))
+  document.getElementById("textArea2").innerHTML = result;*/
+  let containerResult = document.getElementById('container');
+  
+document.getElementById("btnCifrar").addEventListener("click", () => {
+  let toEncode= document.getElementById("message").value.toUpperCase();
+  let offset = parseInt(document.getElementById("offset").value);
+  containerResult.innerHTML = cipher.encode(offset,toEncode);
+  // if (toEncode != ""){
+    
+  // }
+  // else{
+  //   alert("No hay texto")
+  // }
   });
-  document.getElementById("descifrarBtn").addEventListener("click", () => {
-  const toDecode = document.getElementById("textArea1").value.toUpperCase();
-  /*Guardo en una variable el texto ingresados*/
-  const offSet = parseInt(document.getElementById("inputOffSet").value);
-  /*Guardo en una variable el elemento offset*/
-  let result = src/cipher.js(cipher.decode(toDecode,offSet))
-  document.getElementById("textArea2").innerHTML = result;
+document.getElementById("btnDescifrar").addEventListener("click", () => {
+  const toDecode = document.getElementById("message").value.toUpperCase();
+  const offset = parseInt(document.getElementById("offset").value);
+  containerResult.innerHTML = cipher.decode(offset,toDecode);
 });
 document.getElementById("resetbtn").addEventListener("click", () => {
-  document.getElementById("textArea1").value = "";
-  document.getElementById("inputOffSet").value = "";
-  document.getElementById("textArea2").value = "";
+  document.getElementById("message").value = "";
+  document.getElementById("offset").value = "";
+  document.getElementById("containerResult").value = "";
+
 });
 /*const ulText = document.getElementById("list")
 Guardo en una variable el elemento li (elemento madre)traido desde HTML 
