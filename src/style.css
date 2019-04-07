@@ -1,21 +1,22 @@
   h1{
   /*estilos para títulos h1*/
 color: blue;
-text-align:center
-background-color:white;
+text-align:center;
+background-color: rgb(228, 241, 109);
 }
 h2{
 /*estilos para títulos h2*/
-color: black
-text-align:center
-font-family: font|initial|inherit;
-} 
+color: black;
+text-align:center;
+font-family: font[initial]inherit;
+};
 div {
 /*div genérico*/
 text-align:center;
 }  
 #audio{
-display: "block"
+padding-bottom: 1%;
+text-align:center;
 }  
 body{
 background: url(http://www.freeslots99.com/img/slots/inspector-gadget-blueprint.jpg);
@@ -40,14 +41,24 @@ height: 90%;
 border-radius: 20px;
 background-color:lightgrey;
 }
-/*#cifrar{
-padding-bottom: 33%;}
-#descifrar{
+
+/*#inicio{
+padding-bottom: 33%;
+}
+
+#cifrar{
 display: none;
-padding-bottom: 33%;}
+padding-bottom: 33%;
+}
+
+#enviar{
+display: none;
+padding-bottom: 33%;
+}
+
 #root{
-display: none;
-padding-bottom: 33%;}*/
+padding-bottom: 33%;
+}*/
 
 
 
