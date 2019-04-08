@@ -1,8 +1,8 @@
 //audio /document.getElementById("audio").value;
-function myFunction() {
-  var x = document.getElementById("audio").autoplay;
-  document.getElementById("demo").innerHTML = x;
-}
+//function myFunction() {
+//var x = document.getElementById("audio").autoplay;
+//document.getElementById("demo").innerHTML = x;
+//}
 //let name;
 //function namePressed() {
 //name = document.getElementById("boxName").value;
@@ -17,21 +17,21 @@ document.getElementById("btnCifrar").addEventListener("click", () => {
   let toEncode= document.getElementById("message").value.toUpperCase();
   let offset = parseInt(document.getElementById("offset").value);
   containerResult.innerHTML = cipher.encode(offset,toEncode);
-  if (toEncode != ""){
-  }
-  else{
-  alert("Faltan Datos :(")
-  }
+  //if (toEncode != ""){
+  //}
+  //else{
+  //alert("Faltan Datos :(")
+  //}
   });
 document.getElementById("btnDescifrar").addEventListener("click", () => {
   let toDecode = document.getElementById("message").value.toUpperCase();
   let offset = parseInt(document.getElementById("offset").value);
   containerResult.innerHTML = cipher.decode(offset,toDecode);
-  if (toDecode != ""){
-  }
-  else{
-  alert("Faltan Datos :(")
-  }
+  //if (toDecode != ""){
+  //}
+  //else{
+  //alert("Faltan Datos :(")
+  //}
 });
 document.getElementById("resetbtn").addEventListener("click", () => {
   document.getElementById("message").value = "";

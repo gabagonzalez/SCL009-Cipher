@@ -1,7 +1,11 @@
 window.cipher = {    
   encode: (offset, toEncode) => { 
     let result1 = '';
-
+    let toUnicode='';
+    let toUnicode1='';
+    let toUnicode2='';
+    let toUnicode3='';
+    let toUnicode4='';
     for(let i = 0; i< toEncode.length; i++){
     let toAscii = toEncode.charCodeAt(i);
     //console.log(toAscii);
@@ -31,6 +35,11 @@ window.cipher = {
   },
   decode: (offset, toDecode) => { 
     let result2 = '';
+    let toUnicode6='';
+    let toUnicode7='';
+    let toUnicode8='';
+    let toUnicode9='';
+    let toUnicode10='';
     //let codAscii = '';
     for(let i = 0; i< toDecode.length; i++){
     let toAscii = toDecode.charCodeAt(i);
@@ -41,15 +50,15 @@ window.cipher = {
     toAscii = ((toAscii+ 32 - offset-1)%1 + 32);
     toUnicode7  = String.fromCharCode(toAscii);
     result2 += toUnicode7;
-    }else if (33 >= toAscii&& toAscii<= 64){
+    }else if (33 >= toAscii && toAscii<= 64){
     toUnicode8  = String.fromCharCode((toAscii+ 33 - offset)%26 + 33);
     result2 += toUnicode8;
     //de la a-z
-    }else if (toAscii === 165){
-    toAscii = ((toAscii+ 165 - offset-1)%1 + 165);
+    }else if (160 >= toAscii && toAscii<= 165){
+    toAscii = ((toAscii+ 165 - offset)%26 + 165);
     toUnicode9  = String.fromCharCode(toAscii);
     result2 += toUnicode9;
-    //letra Ñ
+    //letra Ñ y acentos
     }else{
     toUnicode10  = String.fromCharCode(toAscii);
     result2 += toUnicode10;
