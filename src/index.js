@@ -17,11 +17,11 @@ document.getElementById("btnCifrar").addEventListener("click", () => {
   let toEncode= document.getElementById("message").value.toUpperCase();
   let offset = parseInt(document.getElementById("offset").value);
   containerResult.innerHTML = cipher.encode(offset,toEncode);
-  //if (toEncode != ""){
-  //}
-  //else{
-  //alert("Faltan Datos :(")
-  //}
+  if (toEncode != ""){
+  }
+  else{
+  alert("Faltan Datos :(")
+  }
   });
 document.getElementById("btnDescifrar").addEventListener("click", () => {
   let toDecode = document.getElementById("message").value.toUpperCase();
