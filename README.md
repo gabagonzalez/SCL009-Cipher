@@ -76,7 +76,7 @@ Diseño de experiencia de usuario (UX):
 
 
 - Prototipado (sketching)
-- Testeo e Iteración
+
 
 ![BajaTest](BajaTest.jpg)
 [![bajaTest](1hqdefault.jpg)](https://youtu.be/ZMZpLsMuye8)
@@ -84,6 +84,9 @@ Diseño de experiencia de usuario (UX):
 
 ![pruebausab](pruebausab.jpg)
 [![testUsab](2hqdefault.jpg)](https://youtu.be/zOmMDNxy-QE)
+
+- Testeo e Iteración
+![guion](guion.jpg)
 
 ### Desición de diseño
 
