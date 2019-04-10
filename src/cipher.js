@@ -3,9 +3,6 @@ window.cipher = {
     let result1 = '';
     let toUnicode='';
     let toUnicode1='';
-    //let toUnicode2='';
-    //let toUnicode3='';
-    //let toUnicode4='';
     for(let i = 0; i< toEncode.length; i++){
     let toAscii = toEncode.charCodeAt(i);
     //console.log(toAscii);
@@ -16,20 +13,8 @@ window.cipher = {
     toAscii = ((toAscii- 32 + offset)%1 + 32);
     toUnicode1  = String.fromCharCode(toAscii);
     result1 += toUnicode1;
-    }//else if (33 >= toAscii && toAscii<= 64){
-    //toUnicode2  = String.fromCharCode((toAscii+ 33 + offset-26)%26 + 33);
-    //result1 += toUnicode2;
-    //de la a-z
-    //}else if (toAscii === 165){
-    //toAscii = ((toAscii- 165 + offset)%1 + 165);
-    //toUnicode3  = String.fromCharCode(toAscii);
-    //result1 += toUnicode3;
-    //letra Ñ
-    //}else{
-    //toUnicode4  = String.fromCharCode(toAscii);
-    //result1 += toUnicode4;
-    //otros
-    //}
+
+    }
   }
 
   return result1;
@@ -38,8 +23,6 @@ window.cipher = {
     let result2 = '';
     let toUnicode6='';
     let toUnicode7='';
-    //let toUnicode8='';
-    //let codAscii = '';
     for(let i = 0; i< toDecode.length; i++){
     let toAscii = toDecode.charCodeAt(i);
     if (toAscii>=65 && toAscii<=90){
@@ -49,20 +32,8 @@ window.cipher = {
     toAscii = ((toAscii+ 32 - offset-1)%1 + 32);
     toUnicode7  = String.fromCharCode(toAscii);
     result2 += toUnicode7;
-    }//else if (33 >= toAscii && toAscii<= 64){
-    //toUnicode8  = String.fromCharCode((toAscii+ 33 - offset)%26 + 33);
-    //result2 += toUnicode8;
-    //de la a-z
-    //}else if (160 >= toAscii && toAscii<= 165){
-    //toAscii = ((toAscii+ 165 - offset)%26 + 165);
-    //toUnicode9  = String.fromCharCode(toAscii);
-    //result2 += toUnicode9;
-    //letra Ñ y acentos
-    //}else{
-    //toUnicode10  = String.fromCharCode(toAscii);
-    //result2 += toUnicode10;
-    //otros
-    //}
+    
+    }
   }
   
   return result2;
