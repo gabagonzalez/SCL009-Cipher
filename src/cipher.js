@@ -16,7 +16,7 @@ window.cipher = {
 
     }
   }
-
+  //console.log(result1);
   return result1;
   },
   decode: (offset, toDecode) => { 
@@ -35,7 +35,7 @@ window.cipher = {
     
     }
   }
-  
+  //console.log(result2);
   return result2;
   }
 };
