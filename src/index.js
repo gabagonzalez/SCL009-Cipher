@@ -8,12 +8,12 @@
   
 document.getElementById("btnCifrar").addEventListener("click", () => {
 //console.log("hola");
-  let toEncode= document.getElementById("message").value.toUpperCase();
+  let toEncode= document.getElementById("message").value;
   let offset = parseInt(document.getElementById("offset").value);
   containerResult.innerHTML = cipher.encode(offset,toEncode);
 
 document.getElementById("btnDescifrar").addEventListener("click", () => {
-  let toDecode = document.getElementById("message").value.toUpperCase();
+  let toDecode = document.getElementById("message").value;
   let offset = parseInt(document.getElementById("offset").value);
   containerResult.innerHTML = cipher.decode(offset,toDecode);
 //console.log("hola");
