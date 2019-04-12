@@ -20,7 +20,7 @@ En la Novena generación de Laboratoria SCL, se nos planteó el desafió de una 
 
 ### Planificación
 - Aplicación de [Trello](https://trello.com/b/ZLTgo5cX/cifrado)
-
+![trello](trello.jpg)
 - Esquemas, Flujos, Prototipos de Baja Fidelidad.
 ![Flujo](flujo.png)
 

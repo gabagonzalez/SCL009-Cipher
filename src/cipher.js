@@ -41,18 +41,20 @@ window.cipher = {
     if (toAscii>=65 && toAscii<=90){
     toUnicode6 = String.fromCharCode((toAscii+ 65 - offset-26)%26 + 65);
     result2 += toUnicode6;
+    //A-Z
     }else if (toAscii === 32){
     toAscii = ((toAscii+ 32 - offset-1)%1 + 32);
     toUnicode7 = String.fromCharCode(toAscii);
     result2 += toUnicode7;
-    }else if (toAscii>=97 && toAscii<= 122){
-    toUnicode8 = String.fromCharCode((toAscii+ 97 - offset-26)%26 + 97);
+    //espacio
+    }else if (toAscii>=97 && toAscii<=122){
+    toUnicode8 = String.fromCharCode((toAscii+97 - offset-38)%26 + 97);
     result2 += toUnicode8;
-    //de la a-zs
-    //}else if (toAscii === 165){
-    //toAscii = ((toAscii- 165 + offset)%1 + 165);
-    //toUnicode9 = String.fromCharCode(toAscii);
-    //result2 += toUnicode9;
+    //a-z
+    }else if (toAscii === 165){
+    toAscii = ((toAscii- 165 + offset)%1 + 165);
+    toUnicode9 = String.fromCharCode(toAscii);
+    result2 += toUnicode9;
     //letra Ñ
     }
   }
