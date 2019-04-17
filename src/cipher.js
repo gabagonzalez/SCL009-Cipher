@@ -34,7 +34,7 @@ window.cipher = {
     let toUnicode6='';
     let toUnicode7='';
     let toUnicode8='';
-    //let toUnicode9='';
+    let toUnicode9='';
     for(let i = 0; i< toDecode.length; i++){
     let toAscii = toDecode.charCodeAt(i);
     //console.log(toAscii);
